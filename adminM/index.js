@@ -5,7 +5,7 @@ var	app = express();
 const port = process.env.PORT || 8080;
 
 const MongoClient = require('mongodb').MongoClient;
-const MONGO_URL = 'mongodb://localhost:27017/testmax1';
+const MONGO_URL = 'mongodb+srv://maxpower:helloworld@cluster0.6di0t.mongodb.net/testmax1?retryWrites=true&w=majority';
 
 var bodyParser = require('body-parser')
 app.use(bodyParser.json())
@@ -21,7 +21,7 @@ var bodyParser = require('body-parser');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(session({
-    secret: 'string-supersecreto-nuncavisto-jamas',
+    secret: 'string-supersecreto32',
     name: 'sessionId',
     proxy: true,
     resave: true,

@@ -2,12 +2,42 @@
 <html>
   <head>
     <title>Login</title>
+    <style>
+      body{
+        margin: 0;
+        padding: 0;
+        background-color: azure;
+      }
+      #contenedor{
+        margin: 0 auto;
+        width: 90%;        
+        text-align: center;        
+         
+      }
+
+      h1{
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        color: brown;
+
+
+      }
+
+
+      form>input{
+        width: 12%;
+        margin: 0 auto;
+        margin-top: 20px;
+      }
+    </style>
   <head>
-  <body>    
-    <form method="post" action="/login">      
-      <input type="text" name="user" placeholder="Usuario..." required>
-      <input type="password" name="pass" placeholder="Password..." required>
-      <input type="submit" value="Login">
-    </form>
+  <body>
+    <div id="contenedor"> 
+      <h1>Inicie sesión</h1> 
+     <form method="post" action="/login">      
+       <input type="text" name="user" placeholder="Usuario..." required>
+       <input type="password" name="pass" placeholder="Password..." required>
+       <input type="submit" value="Login">
+     </form>
+    </div> 
   <body>
 <html>
